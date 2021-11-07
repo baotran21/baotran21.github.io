@@ -1,0 +1,36 @@
+.flexContainer {
+    display: flex;
+}
+.flexContainer > .userResearch {
+    width: 33%;
+}
+.flexContainer > .interfaceDesign {
+    width: 33%;
+}
+.flexContainer > .webDevelopment {
+    width: 33%;
+}
+.workGrid {
+display: grid;
+}
+.project1 {
+    grid-area: auto;
+}
+.grid-container{ 
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+.project2 {
+    grid-area: auto;
+}
+.grid-container{ 
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+.project3 {
+    grid-area: auto;
+}
+.grid-container{ 
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
