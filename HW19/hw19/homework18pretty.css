@@ -1,0 +1,155 @@
+/*css style for my skills*/
+body {
+    background-color: black;
+  }
+  
+  h1 {
+    color:whitesmoke;
+    text-align: center;
+    text-align: center;
+  }
+  h3 {
+      color: whitesmoke;
+      font:xx-large;
+  }
+  h4{
+      color: whitesmoke;
+      font: xx-large;
+  }
+  p {
+    font-family: verdana;
+    font-size: caption;
+    color: whitesmoke;
+  }
+
+.flexContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flexContainer>.userResearch {
+    padding: 10px;
+    width: 33%;
+}
+
+.flexContainer>.interfaceDesign {
+    padding: 10px;
+    width: 33%;
+}
+
+.flexContainer>.webDevelopment {
+    padding: 10px;
+    width: 33%;
+}
+.workGrid{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.projectInfo{
+    padding: 10px;
+    text-align: left;
+}
+.projectPicture{
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+}
+.projectpic{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+.skillpic{
+    width: 200px;
+    height: 200px;
+    
+}
+
+button{
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+button:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+button:active {
+    color: rgb(223, 31, 31)
+}
+
+button:active:after {
+    background: transparent;
+}
+
+button:hover:before {
+    opacity: 1;
+}
+
+button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+/*code an mobile media query to make your design responsice for mobile deviceds*/
+@media only screen and (max-width:600) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexContainer>.userResearch {
+        width: 100%;
+    }
+
+    .flexContainer>.interfaceDesign {
+        width: 100%;
+    }
+
+    .flexContainer>.webDevelopment {
+        width: 100%;
+    }
+    .workGrid{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .projectInfo{
+        padding: 10px;
+        text-align: center;
+    }
+    .projectPicture{
+        padding: 10px;
+        width: 400px;
+        height: 200px;
+
+}

@@ -1,0 +1,71 @@
+/*css style for my skills*/
+h1 {
+    text-align: center;
+}
+.flexContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flexContainer>.userResearch {
+    padding: 10px;
+    width: 33%;
+}
+
+.flexContainer>.interfaceDesign {
+    padding: 10px;
+    width: 33%;
+}
+
+.flexContainer>.webDevelopment {
+    padding: 10px;
+    width: 33%;
+}
+.workGrid{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.projectInfo{
+    padding: 10px;
+    text-align: left;
+}
+.projectPicture{
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+}
+/*code an mobile media query to make your design responsice for mobile deviceds*/
+@media only screen and (max-width:600) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexContainer>.userResearch {
+        width: 100%;
+    }
+
+    .flexContainer>.interfaceDesign {
+        width: 100%;
+    }
+
+    .flexContainer>.webDevelopment {
+        width: 100%;
+    }
+    .workGrid{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .projectInfo{
+        padding: 10px;
+        text-align: center;
+    }
+    .projectPicture{
+        padding: 10px;
+        width: 400px;
+        height: 200px;
+
+}
